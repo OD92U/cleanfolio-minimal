@@ -33,6 +33,7 @@ body {
   --clr-fg-alt: #444;
   --clr-primary: #2978b5;
   --shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  --hover: rgba(41, 120, 181, 1) 0px 7px 29px 0px;
 }
 
 .dark {
@@ -43,6 +44,8 @@ body {
   --clr-primary: #90a0d9;
   --shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
     rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  --hover: rgba(144, 160, 217, 1) 0px 10px 36px 0px,
+    rgba(144, 160, 217, 1) 0px 0px 0px 1px;  
 }
 
 ::-moz-selection {
@@ -187,6 +190,7 @@ button {
 
 .btn--plain:hover {
   transform: translateY(-4px);
+  box-shadow: var(--hover);
 }
 
 .btn--icon {
@@ -299,6 +303,7 @@ main {
 
 .project:hover {
   transform: translateY(-7px);
+  box-shadow: var(--hover);
 }
 
 .project__description {
@@ -411,3 +416,5 @@ main {
     display: none;
   }
 }
+
+/* Gestion */

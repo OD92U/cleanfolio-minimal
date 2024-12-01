@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Portfolio" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/842238ccb4.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Oleg Dubynets</title>
+    <style>
+        body {
+            font-family: Poppins, sans-serif;
+            padding: 20px;
+        }
+        .form-container {
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        label {
+            font-weight: bold;
+            margin-top: 10px;
+            display: block;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        textarea {
+            resize: vertical;
+            height: 150px;
+        }
+        .checkbox-group {
+            margin-top: 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); 
+            gap: 20px; 
+        }
+        .checkbox-group label {
+            display: flex;
+            align-items: center;
+            font-size: 16px;
+        }
+        .checkbox-group input {
+            margin-right: 10px; 
+        }
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="form-container">
+        <h2>Ajout de Projet</h2>
+        <form id="projectForm">
+            <label for="title">Titre :</label>
+            <input type="text" id="title" name="title" required>
+
+            <label for="githubLink">Lien GitHub :</label>
+            <input type="url" id="githubLink" name="githubLink" required>
+
+            <label for="demoLink">Lien Démo :</label>
+            <input type="url" id="demoLink" name="demoLink" required>
+
+            <label for="description">Description :</label>
+            <textarea id="description" name="description" required></textarea>
+
+            <div class="checkbox-group">
+                <label>Compétences:</label>
+                <input type="checkbox" id="HTML" name="options" value="HTML">
+                <label for="HTML">HTML</label>
+                <br>
+                <input type="checkbox" id="CSS" name="options" value="CSS">
+                <label for="CSS">CSS</label>
+                <br>
+                <input type="checkbox" id="SASS" name="options" value="SASS">
+                <label for="SASS">SASS</label>
+                <br>
+                <input type="checkbox" id="JavaScript" name="options" value="JavaScript">
+                <label for="JavaScript">JavaScript</label>
+                <br>
+                <input type="checkbox" id="React" name="options" value="React">
+                <label for="React">React</label>
+                <br>
+                <input type="checkbox" id="NodeJS" name="options" value="NodeJS">
+                <label for="NodeJS">NodeJS</label>
+                <br>
+                <input type="checkbox" id="SQL" name="options" value="SQL">
+                <label for="SQL">SQL</label>
+                <br>
+                <input type="checkbox" id="NoSQL" name="options" value="NoSQL">
+                <label for="NoSQL">NoSQL</label>
+                <br>
+                <input type="checkbox" id="SEO" name="options" value="SEO">
+                <label for="SEO">SEO</label>
+                <br>
+                <input type="checkbox" id="Optimisation" name="options" value="Optimisation">
+                <label for="Optimisation">Optimisation</label>
+                <br>
+            </div>
+
+            <button type="submit">Soumettre</button>
+        </form>
+    </div>
+
+    <script src="../scripts/gestion.js"></script>
+
+</body>
+</html>
